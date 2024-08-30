@@ -1,0 +1,13 @@
+<div class="card text-center">
+  <div class="card-header">
+      Usuario: {{ nombre }}
+  </div>
+  <div class="card-body">
+      <div class="form-floating">
+          <textarea class="form-control mb-3" placeholder="Leave a comment here"
+              [(ngModel)]="mensaje" name="mensaje"></textarea>
+          <label>Mensaje</label>
+      </div>
+      <a class="btn btn-primary" (click)="enviar()">Enviar</a>
+  </div>
+</div>
